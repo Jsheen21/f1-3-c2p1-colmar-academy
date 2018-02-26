@@ -1,0 +1,442 @@
+html,
+body {
+  font-size: 16px;
+  color: #131517;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.3;
+}
+
+p,
+span,
+li,
+a {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+}
+
+.header {
+  display: flex;
+  height: 4rem;
+  background-color: #FFFFFF;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0, 1.5rem;
+  z-index: 10;
+  box-shadow: 0 0 1rem #1C3144;
+}
+
+.logo-and-univ-name {
+  height: 2rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.univ-name {
+  display: flex;
+  align-items: center;
+}
+
+.univ-name span h2 {
+  font-weight: bold;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+li {
+  padding-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 20px;
+  color: #131517
+}
+
+.header.mobile {
+  display: none;
+}
+
+.sign-in a {
+  Background-color: #6F8185;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #16B1B5;
+  transition: all 650ms ease-out 100ms;
+}
+
+.text-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.text-item a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 0;
+}
+
+.text-item a:hover {
+    color: #0F5257;
+    transition: color 450ms ease-out;
+}
+
+.button a:hover,
+.sign-in a:hover {
+  background-color: #4A4B4B;
+  transition: all 450ms ease-in 0.295s;
+  color: #16B1B5;
+}
+
+.highlighted {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1.5rem;
+background-color: #f0f0f0;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.image-container img {
+  display: flex;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.button .sign-in {
+  display: flex;
+  width: 70%;
+  padding-top: 1.5rem;
+}
+
+.button .sign-in a {
+  width: 100%;
+  text-align: center;
+}
+
+.text-container .button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info {
+  background-color: white;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.thumbnail .mobile {
+  display: none;
+}
+
+.thumbnail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  margin-bottom: 10px;
+}
+
+.thumbnail:hover{
+  background-color: #D0D0D0;
+  transition: all 750ms ease-in;
+  color: #131517;
+}
+
+.main {
+  background-color: rgba(18, 166, 200, 0.50);
+}
+
+.thumbnail .image-container {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+
+.thumbnail .text-item {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+}
+
+.thumbnail-container .text-item span {
+  padding-top: 8px
+}
+
+.text-item a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.subjects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #3f4142;
+}
+
+.subjects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4.5rem 1rem 4.5rem;
+}
+
+.subject {
+  background-color: white;
+  max-width: 30%;
+  margin: 1rem;
+  position: relative;
+}
+
+.subject:hover {
+  background-color: #D0D0D0;
+  transition: all 750ms ease-in;
+  color: #282c2f
+}
+
+.subject .image-container {
+  height: auto;
+  width: 90%;
+  padding: 1rem;
+}
+
+.subject .text-item {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.thesis-section {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.thesis-section .text-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.thesis-section .text-container .text-item {
+  padding-bottom: 0;
+}
+
+.image-container video {
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1.5px solid rgba(10, 120, 185, 0.10);
+  background-color: #FFF;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p,
+  span,
+  li,
+  a {
+    line-height: 1.4;
+  }
+
+  .header .logo-and-univ-name,
+  .header .nav-bar  {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    position: fixed;
+    align-items: center;
+  }
+  .header .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .mobile ul {
+    display: flex;
+    align-items: center;
+  }
+  .highlighted {
+    flex-direction: column;
+    padding: 4rem 0 0 0;
+  }
+  .highlighted .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .highlighted .text-container {
+    padding: 0 1rem 2rem 1rem;
+  }
+  .text-container .button {
+    flex-direction: row;
+    justify-content:center;
+  }
+  .button .sign-in {
+    width: 100%;
+  }
+  .button a{
+    padding: 1rem;
+  }
+
+  .sign-in a:active {
+    background-color: #1E3241;
+    transition: all 450ms ease-in 0.295s;
+    color: #C1CFDE;
+  }
+
+  .info .desktop {
+    display: none;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .thumbnail-container {
+    width: 100%;
+    border-left: none;
+  }
+
+  .thumbnail {
+    flex-direction: column;
+    margin-bottom:1px;
+  }
+
+  .thumbnail .mobile {
+    height: 20%;
+    width: 30%;
+  }
+
+  #pic {
+    display: none;
+  }
+  .thumbnail .text-item {
+    padding: 1rem;
+  }
+  .text-item {
+    width: 100%;
+  }
+
+  .subjects-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  .subject .image-container,
+  .subject img,
+  .subject span,
+  .subject p {
+    display: none;
+  }
+  .title {
+    padding-bottom: 0;
+  }
+
+  .subject {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .thesis-section .text-container,
+  .thesis-section .thumbnail-container {
+    display: none;
+  }
+  .thesis-section {
+    padding: 1rem 0 1.5rem 0;
+  }
+  .thesis-section .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .footer {
+    border-top: 0;
+  }
+  .footer .nav-bar{
+    display: none;
+  }
+  .copyrights {
+    border-top: none;
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
